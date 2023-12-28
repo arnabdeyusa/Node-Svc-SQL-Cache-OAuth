@@ -1,0 +1,43 @@
+{
+    "Body": "",
+    "RootEnv":"soapenv",
+    "WSDL":"",
+    "Header": {
+        "wsse:Security": {
+            "attributes": {
+                "xmlns:wsse": "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+            },
+            "wsse:UsernameToken": {
+                "attributes": {
+                    "wsu:Id": "UsernameToken-24",
+                    "xmlns:wsu": "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                },
+                "wsse:Username": "",
+                "wsse:Password": ""
+            }
+        }
+    },
+    "RequestHeader": {
+        "ClientID": "",
+        "ClientTransactionID": "2",
+        "ProcessingDirectives": {
+            "Timeout": "PT60S",
+            "ProcessingMode": "Sync",
+            "ReturnProcessingNodesHeader": "true"
+        }
+    },
+    "Option": {            
+        "namespaceArrayElements": false,
+        "wsdl_options": {
+        "fixedPath": true
+        },
+        "xmlnsAttributes": [{
+            "name": "wsu:Id",
+            "value": "UsernameToken-24"
+          }],
+        "stream": true,
+        "envelopeKey": "root"
+    },
+    "Mes": "",
+    "Soap": ""
+}

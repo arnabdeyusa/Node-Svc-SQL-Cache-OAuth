@@ -1,0 +1,43 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "2.0.0",
+    "title": "NODE REST API"
+  },
+  "basePath": "/",
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    "servers": [
+      {
+        "url": "http://localhost:4000"
+      }
+    ]
+  },
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "paths": {
+    "/shared/all/Tatcodes": {
+      "get": {
+        "description": "Get All Tat Codes",
+        "tags": [
+          "Artifacts"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "tags": []
+}

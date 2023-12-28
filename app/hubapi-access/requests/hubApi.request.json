@@ -1,0 +1,11 @@
+
+{
+    "ty": {
+        "dd":"{SS}"
+        },
+        "hhNumber": "{WW}",
+    "timeWindow": {
+        "endDateTime": "{ENDDATE}",
+        "startDateTime": "{STARTDATE}"
+        }
+}
