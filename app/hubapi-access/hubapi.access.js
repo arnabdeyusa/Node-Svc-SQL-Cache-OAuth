@@ -8,10 +8,10 @@ const datFormat = 'YYYY-MM-DDTHH:mm:ss';
 class HUBAPIAccess {
   constructor() { }
   async getFlightInfo(req, res) {
-    const aosTime = moment.utc();
-    const arrivalTimeStart = aosTime.clone().add(-12, 'days').format(datFormat);
-    const departureTimeEnd = aosTime.clone().add(6, 'days').format(datFormat);
-    const reqBody = JSON.parse(JSON.stringify(json).replace("{RR}", req.body.Piston).replace("{ENDDATE}", departureTimeEnd).replace("{STARTDATE}", arrivalTimeStart));
+    const bosTime = moment.utc();
+    const noValTimeStart = bosTime.clone().add(-12, 'days').format(datFormat);
+    const valTimeEnd = bosTime.clone().add(6, 'days').format(datFormat);
+    const reqBody = JSON.parse(JSON.stringify(json).replace("{RR}", req.body.Piston).replace("{ENDDATE}", valTimeEnd).replace("{STARTDATE}", noValTimeStart));
     //const reqBody = json;
 
     var response = await HUBAPIClient.httpPostReq(reqBody);

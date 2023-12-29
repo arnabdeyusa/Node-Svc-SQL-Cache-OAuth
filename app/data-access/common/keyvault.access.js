@@ -24,9 +24,9 @@ class KeyvaultAccess {
         HUBAPIPW = (await client.getSecret('HUBAPI-pw')).value;
     
         getServerName = (await client.getSecret('BBsMasterServer')).value;
-        getDbName = (await client.getSecret('AosMasterDB')).value;
-        getDbUserName = (await client.getSecret('AosMasterUser')).value;
-        getDbPassword = (await client.getSecret('AosMasterPwd')).value;
+        getDbName = (await client.getSecret('bosMasterDB')).value;
+        getDbUserName = (await client.getSecret('bosMasterUser')).value;
+        getDbPassword = (await client.getSecret('bosMasterPwd')).value;
     
 
         BQRCache.set('HUBAPICertificate', HUBAPICertificate);
