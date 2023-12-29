@@ -1,6 +1,6 @@
-# Node JS REST API with OAuth Validations, SQL Access, Memory cache.
+# Node JS REST API with OAuth Validations, SQL Access, and Memory cache.
 
-Please read the following table for various functionalities in this repo
+Please read the following table for various functionalities in this repo.
 
 | File/Directory                                        | Functions
 | ------------------------------------------            | ------
